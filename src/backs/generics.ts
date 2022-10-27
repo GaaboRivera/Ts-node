@@ -1,9 +1,12 @@
-import { printObject, genericFunction, genericFunctionArrow,  } from '../generics/generics';
-import { Villain, Hero } from '../interfaces';
+import {
+  printObject,
+  genericFunction,
+  genericFunctionArrow,
+} from '../generics/generics'
+import { Villain, Hero } from '../interfaces'
 
 // import { Hero } from './interfaces/hero';
 // import { Villain } from './interfaces/villain';
-
 
 // printObject( 123 );
 // printObject( new Date() );
@@ -17,10 +20,9 @@ import { Villain, Hero } from '../interfaces';
 // console.log(  genericFunctionArrow( new Date() ).getDate()   )
 
 const deadpool = {
-    name: 'Deadpool',
-    realName: 'Wade Winston Wilson',
-    dangerLevel: 130
+  name: 'Deadpool',
+  realName: 'Wade Winston Wilson',
+  dangerLevel: 130,
 }
 
-
-console.log( genericFunctionArrow<Villain>(deadpool).dangerLevel  )
+console.log(genericFunctionArrow<Villain>(deadpool).dangerLevel)
